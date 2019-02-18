@@ -20,11 +20,11 @@ class Patient
   end
 
   def appointments
-    @appointments.select {|meeting| meeting.patient}
+    @appointments.select {|appointment| appointment.patient}
   end
 
   def doctors
-    @appointments.collect {|meeting| meeting.doctor}
+    @appointments.collect {|appointment| appointment.doctor}
   end
 end
 
